@@ -1,0 +1,29 @@
+{
+  "name": "gifboard",
+  "version": "1.0.0",
+  "description": "A fun React example",
+  "main": "index.js",
+  "scripts": {
+    "build": "stylus ./src/client/stylus/index.styl --out ./client/css && browserify ./src/client/index.js -t babelify -o ./client/js/gifboard.js",
+    "start": "npm install && npm run build && open client/index.htm",
+    "test": "mocha"
+  },
+  "keywords": [
+    "react",
+    "gif"
+  ],
+  "author": "JJW",
+  "license": "ISC",
+  "dependencies": {
+    "babel": "^4.4.5",
+    "keykey": "^1.0.0",
+    "react": "^0.12.2",
+    "react-dropzone": "^1.0.0"
+  },
+  "devDependencies": {
+    "babelify": "^5.0.3",
+    "browserify": "^9.0.3",
+    "mocha": "^2.1.0",
+    "stylus": "^0.50.0"
+  }
+}
